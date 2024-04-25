@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.firstName,
+.lastName,
+.email,
+.password,
+.confirmPassword,
+.city,
+.state,
+.country,
+.date,
+select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.text-container {
+    display: block;
+    position: relative;
+    overflow: visible;
+}
+
+.text-container input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#autocomplete-container {
+    width: auto !important;
+    min-width: 150px;
+    max-width: 300px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+#autocomplete-container div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#autocomplete-container div:hover {
+    background-color: #e9e9e9;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #20badd;
+}
+
+@media screen and (max-width: 600px) {
+    .container .text-container .btn {
+        width: calc(50% - -25px);
+        right: -29px;
+    }
+    .container div input[type="radio"],
+    .container div input[type="checkbox"] {
+        width: calc(50% - 10px);
+        margin-right: -11px;
+        margin-bottom: 5px;
+    }
+    .container div input[type="radio"]:nth-child(odd),
+    .container div input[type="checkbox"]:nth-child(odd) {
+        clear: left;
+    }
+}
